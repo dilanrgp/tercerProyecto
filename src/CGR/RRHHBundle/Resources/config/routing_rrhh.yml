@@ -1,0 +1,11 @@
+rrhh_default:
+    path: /index/{name}
+    defaults: { _controller:RRHHBundle:Default:index }
+    
+rrhh_help:
+    path: /help/{help}
+    defaults: { _controller:RRHHBundle:Default:help }
+    
+rrhh_info:
+    path: /info/{name}/{lastName}/{id}
+    defaults: { _controller:RRHHBundle:Info:index, name:candy, lastName:null, id:null }

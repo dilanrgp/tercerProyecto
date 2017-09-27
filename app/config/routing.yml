@@ -1,0 +1,10 @@
+rrhh:
+    resource: "@RRHHBundle/Resources/config/routing_rrhh.yml"
+    prefix:   /abc
+#    resource: "@RRHHBundle/Controller/"
+#    type:     annotation
+#    prefix:   /rrhh
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
