@@ -16,11 +16,11 @@ class InfoController extends Controller
         var_dump($lastName); echo "<br>";
         var_dump($id); echo "<br>";
         die("Murió el programa");
-        
-//        return $this->render('RRHHBundle:Default:index.html.twig',
-//                array('nombre'=>$name)
-//                
-//                );
+    }
+    
+    public function pagina_estaticaAction($pagina)
+    {
+        return $this->render('RRHHBundle:Info:'.$pagina.".html.twig");
     }
     
     

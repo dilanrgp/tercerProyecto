@@ -9,3 +9,7 @@ rrhh_help:
 rrhh_info:
     path: /info/{name}/{lastName}/{id}
     defaults: { _controller:RRHHBundle:Info:index, name:candy, lastName:null, id:null }
+    
+rrhh_estatico:
+    path: /estatico/{pagina}
+    defaults: { _controller:RRHHBundle:Info:pagina_estatica, pagina:quien }
