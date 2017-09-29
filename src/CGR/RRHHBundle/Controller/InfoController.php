@@ -28,5 +28,6 @@ class InfoController extends Controller {
            throw $this->createNotFoundException("MUAJAJAJAJA");
         }
     }
+    
 
 }

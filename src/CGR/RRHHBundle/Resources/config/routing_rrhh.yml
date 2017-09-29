@@ -13,3 +13,25 @@ rrhh_info:
 rrhh_estatico:
     path: /estatico/{pagina}
     defaults: { _controller:RRHHBundle:Info:pagina_estatica, pagina:quien }
+    
+    
+producto_crear:
+    path: /producto/new
+    defaults: { _controller:RRHHBundle:Producto:new }
+    
+producto_listar:
+    path: /producto/listar
+    defaults: { _controller:RRHHBundle:Producto:productosAll }
+    
+producto_mostrar:
+    path: /producto/show/{id}
+    defaults: { _controller:RRHHBundle:Producto:productoShow }
+    
+producto_delete:
+    path: /producto/delete/{id}
+    defaults: { _controller:RRHHBundle:Producto:productoDelete }
+    
+producto_editar:
+    path: /producto/editar/{id}/{nombre}
+    defaults: { _controller:RRHHBundle:Producto:productoEdit }
+    
