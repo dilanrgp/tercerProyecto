@@ -1,3 +1,11 @@
+rrhh_producto:
+    resource: "@RRHHBundle/Controller/ProductoController.php"
+    type:     annotation
+
+rrhh_categoria:
+    resource: "@RRHHBundle/Controller/CategoriaController.php"
+    type:     annotation
+
 rrhh:
     resource: "@RRHHBundle/Resources/config/routing_rrhh.yml"
     prefix:   /abc

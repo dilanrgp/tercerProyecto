@@ -9,16 +9,10 @@
 namespace CGR\RRHHBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="producto")
- * @UniqueEntity(
- *     fields={"categoria"},
- *     errorPath="categoria",
- *     message="La categoria ya fue agregada"
- * )
  */
 
 class Producto
@@ -81,28 +75,4 @@ class Producto
         $this->descripcion = $descripcion;
     }
     
-
-    /**
-     * Set categoria
-     *
-     * @param \CGR\RRHHBundle\Entity\Categoria $categoria
-     *
-     * @return Producto
-     */
-    public function setCategoria(\CGR\RRHHBundle\Entity\Categoria $categoria = null)
-    {
-        $this->categoria = $categoria;
-
-        return $this;
-    }
-
-    /**
-     * Get categoria
-     *
-     * @return \CGR\RRHHBundle\Entity\Categoria
-     */
-    public function getCategoria()
-    {
-        return $this->categoria;
-    }
 }
